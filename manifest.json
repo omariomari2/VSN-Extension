@@ -1,0 +1,24 @@
+{
+    "manifest_version": 3,
+    "name": "Pick My Date",
+    "description": "Get updated with the latest available dates for your interviews.",
+    "version": "1.01.0",
+    "action": {
+        "default_popup": "extension/chroma.html"
+    },
+    "icons": {
+        "16": "images/chroma.png",
+        "32": "images/chroma.png",
+        "48": "images/chroma.png",
+        "128": "images/chroma.png"
+    }, 
+    "background": {
+        "service_worker": "background.js",
+        "type": "module" 
+    },
+    "permissions": [
+        "storage",
+        "alarms",
+        "notifications"
+    ]
+}
