@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pcik My Date</title>
+    <link rel="stylesheet" href="bulma.min.css">
+</head>
+<body>
+    <div class="all">
+        <div class="container">
+            <div class="title m-2">Pick Your Date</div>
+    
+            <div class="field m-2">
+                <div class="label">Status</div>
+                <div class="tag is-success">Running</div>
+                <div class="tag is-danger">Stopped</div>
+            </div>
+        </div>
+    
+        <div class="container m-2">
+            <label class="lable">Location ID</label>
+            <div class="select">
+                <select id="user_location">
+                </select>
+            </div>
+            <br>
+            <div class="field">
+                <label for="Start Date" class="label" >Start Date</label>
+                <div class="control">
+                    <input type="date" class="input" id="start_date">
+                </div>
+                <label for="End Date" class="label">End Date</label>
+                <div class="control">
+                    <input type="date" class="input" id="end_date">
+                </div>
+            </div>
+            <br>
+            <div class="container m-2">
+                <button class="button is-success is-fullwidth" id="start">Save & Start</button>
+            </div> 
+            <div class="container m-2">
+                <button class="button is-danger is-fullwidth" id="stop">Stop</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="chroma.js"></script>
+</html>
